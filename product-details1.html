@@ -12,17 +12,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
         type="text/css">
     <link href="assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./assets/css/icons/material/styles.min.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
-    <link href="global_assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-    <!-- <link href="assets/css/product-carousal.css" rel="stylesheet" type="text/css"> -->
+    <link href="assets/css/carousal.css" rel="stylesheet" type="text/css">
     <!-- /global stylesheets -->
 
     <!-- Core JS files -->
@@ -61,7 +60,7 @@
     <div class="navbar navbar-white navbar-expand-xl container">
         <div class="navbar-brand">
             <a href="index.html">
-                <img src="assets/images/main-logo.png" alt="themeist">
+                <img src="./assets/images/main-logo.jpg" alt="themeist">
             </a>
         </div>
 
@@ -80,10 +79,10 @@
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link pt-3" href="register.html">Sign Up</a>
+                    <a class="nav-link pt-3" href="">Sign Up</a>
                 </li>
                 <li>
-                    <a class="nav-link pt-3" href="login.html">Login </a>
+                    <a class="nav-link pt-3" href="">Login </a>
                 </li>
             </ul>
 
@@ -94,21 +93,14 @@
     <!-- Main navbar -->
     <div class="navbar navbar-white navbar-expand-md container">
 
-        <!-- Mobile toggler -->
-        <!-- <div class="d-md-none">
-			...
-		</div> -->
-        <!-- /mobile toggler -->
-
-
         <!-- Navbar content -->
         <div class="collapse navbar-collapse font-size-lg" id="navbar">
             <ul class="navbar-nav ">
-                <li><a class="nav-link text-black-50" href="index.html">Home</a></li>
-                <li><a class="nav-link text-black-50" href="about.html">About</a></li>
-                <li><a class="nav-link text-black-50" href="gridview.html">Our Services</a></li>
-                <li><a class="nav-link text-black-50" href="contact.html">Contact Us</a></li>
-                <li><a class="nav-link text-black-50" href="help.html">Help</a></li>
+                <li><a class="nav-link text-black-50" href="">Home</a></li>
+                <li><a class="nav-link text-black-50" href="">About</a></li>
+                <li><a class="nav-link text-black-50" href="">Our Services</a></li>
+                <li><a class="nav-link text-black-50" href="">Contact Us</a></li>
+                <li><a class="nav-link text-black-50" href="">Help</a></li>
             </ul>
         </div>
         <!-- /navbar content -->
@@ -116,7 +108,7 @@
             <form action="" class="pr-2">
                 <input type="text" class="form-control" placeholder="Search Your product" size="40">
             </form>
-            <a href="cart.html" class="btn btn-secondary" type="button"><i class="icon-cart"></i> Your Cart</a>
+            <button class="btn btn-secondary" type="button"><i class="icon-cart"></i> Your Cart</button>
         </div>
     </div>
     <!-- /main navbar -->
@@ -126,11 +118,11 @@
 
         <!-- carousel start-->
 
-        <div class="col-md-6 ">
+        <div class="col-md-6 m-auto">
             <div class="carousel-container position-relative row">
 
                 <!-- Sorry! Lightbox doesn't work - yet. -->
-
+    
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-slide-number="0">
@@ -185,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <!-- Carousel Navigation -->
                 <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -193,33 +185,27 @@
                             <div class="row mx-0">
                                 <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected"
                                     data-target="#myCarousel" data-slide-to="0">
-                                    <img src="https://source.unsplash.com/Pn6iimgM-wo/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/Pn6iimgM-wo/600x400/" class="img-fluid" alt="...">
                                 </div>
                                 <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2"
                                     data-target="#myCarousel" data-slide-to="1">
-                                    <img src="https://source.unsplash.com/tXqVe7oO-go/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/tXqVe7oO-go/600x400/" class="img-fluid" alt="...">
                                 </div>
                                 <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2"
                                     data-target="#myCarousel" data-slide-to="2">
-                                    <img src="https://source.unsplash.com/qlYQb7B9vog/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/qlYQb7B9vog/600x400/" class="img-fluid" alt="...">
                                 </div>
                                 <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2"
                                     data-target="#myCarousel" data-slide-to="3">
-                                    <img src="https://source.unsplash.com/QfEfkWk1Uhk/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/QfEfkWk1Uhk/600x400/" class="img-fluid" alt="...">
                                 </div>
                                 <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2"
                                     data-target="#myCarousel" data-slide-to="4">
-                                    <img src="https://source.unsplash.com/CSIcgaLiFO0/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/CSIcgaLiFO0/600x400/" class="img-fluid" alt="...">
                                 </div>
                                 <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2"
                                     data-target="#myCarousel" data-slide-to="5">
-                                    <img src="https://source.unsplash.com/a_xa7RUKzdc/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/a_xa7RUKzdc/600x400/" class="img-fluid" alt="...">
                                 </div>
                             </div>
                         </div>
@@ -227,23 +213,19 @@
                             <div class="row mx-0">
                                 <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2"
                                     data-target="#myCarousel" data-slide-to="6">
-                                    <img src="https://source.unsplash.com/uanoYn1AmPs/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/uanoYn1AmPs/600x400/" class="img-fluid" alt="...">
                                 </div>
                                 <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2"
                                     data-target="#myCarousel" data-slide-to="7">
-                                    <img src="https://source.unsplash.com/_snqARKTgoc/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/_snqARKTgoc/600x400/" class="img-fluid" alt="...">
                                 </div>
                                 <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2"
                                     data-target="#myCarousel" data-slide-to="8">
-                                    <img src="https://source.unsplash.com/M9F8VR0jEPM/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/M9F8VR0jEPM/600x400/" class="img-fluid" alt="...">
                                 </div>
                                 <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2"
                                     data-target="#myCarousel" data-slide-to="9">
-                                    <img src="https://source.unsplash.com/Q1p7bh3SHj8/600x400/" class="img-fluid"
-                                        alt="...">
+                                    <img src="https://source.unsplash.com/Q1p7bh3SHj8/600x400/" class="img-fluid" alt="...">
                                 </div>
                                 <div class="col-2 px-1 py-2"></div>
                                 <div class="col-2 px-1 py-2"></div>
@@ -251,15 +233,15 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
-                        <span class="icon-circle-left2" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
-                        <span class="icon-circle-right2" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-
+    
             </div> <!-- /row -->
         </div>
 
@@ -298,8 +280,7 @@
                             harum!</p>
                     </div>
                     <div>
-                        <button type="button" class="btn bg-warning mt-4" data-toggle="modal"
-                            data-target="#modal_theme_warning">Add to cart</button>
+                        <a href="#" class="btn btn-warning mt-4">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -319,10 +300,10 @@
                     <div class="row">
                         <div class="col-md-3">
                             <a href="#" class="text-dark">
-                                <div class="rounded py-2 px-3 mb-3 d-flex align-items-center">
+                                <div class="rounded py-2 px-3 mb-3 d-flex">
                                     <div>
-                                        <img src="assets/images/slide1.jpg" alt="image-gallery" width="80" height="80"
-                                            class="img-fluid opacity-75">
+                                        <img src="./assets/images/image-gallery.png" alt="image-gallery" width="80"
+                                            height="80" class="img-fluid opacity-75">
                                     </div>
                                     <div class="pt-2 pl-3">
                                         <h6 class="m-0">PRODUCT NAME</h6>
@@ -338,10 +319,10 @@
                         </div>
                         <div class="col-md-3">
                             <a href="#" class="text-dark">
-                                <div class="rounded py-2 px-3 mb-3 d-flex align-items-center">
+                                <div class="rounded py-2 px-3 mb-3 d-flex">
                                     <div>
-                                        <img src="assets/images/slide1.jpg" alt="image-gallery" width="80" height="80"
-                                            class="img-fluid opacity-75">
+                                        <img src="./assets/images/image-gallery.png" alt="image-gallery" width="80"
+                                            height="80" class="img-fluid opacity-75">
                                     </div>
                                     <div class="pt-2 pl-3">
                                         <h6 class="m-0">PRODUCT NAME</h6>
@@ -357,10 +338,10 @@
                         </div>
                         <div class="col-md-3">
                             <a href="#" class="text-dark">
-                                <div class="rounded py-2 px-3 mb-3 d-flex align-items-center">
+                                <div class="rounded py-2 px-3 mb-3 d-flex">
                                     <div>
-                                        <img src="assets/images/slide1.jpg" alt="image-gallery" width="80" height="80"
-                                            class="img-fluid opacity-75">
+                                        <img src="./assets/images/image-gallery.png" alt="image-gallery" width="80"
+                                            height="80" class="img-fluid opacity-75">
                                     </div>
                                     <div class="pt-2 pl-3">
                                         <h6 class="m-0">PRODUCT NAME</h6>
@@ -376,10 +357,10 @@
                         </div>
                         <div class="col-md-3">
                             <a href="#" class="text-dark">
-                                <div class="rounded py-2 px-3 mb-3 d-flex align-items-center">
+                                <div class="rounded py-2 px-3 mb-3 d-flex">
                                     <div>
-                                        <img src="assets/images/slide1.jpg" alt="image-gallery" width="80" height="80"
-                                            class="img-fluid opacity-75">
+                                        <img src="./assets/images/image-gallery.png" alt="image-gallery" width="80"
+                                            height="80" class="img-fluid opacity-75">
                                     </div>
                                     <div class="pt-2 pl-3">
                                         <h6 class="m-0">PRODUCT NAME</h6>
@@ -606,13 +587,11 @@
         <hr class="m-0">
 
         <div class="card-body">
-            <h6 class="mb-2">Add comment</h6>
+            <h6 class="mb-3">Add comment</h6>
             <div class="mb-3">
-                <div id="add-comment">
-                    <form action="">
-                        <input type="text" name="new-comment" id="new-comment" placeholder="Comment here" size="162">
-                    </form>
-                </div>
+                <div id="add-comment">Get his declared appetite distance his together now families. Friends am
+                    himself at on norland it viewing. Suspected elsewhere you belonging continued commanded
+                    she...</div>
             </div>
 
             <div class="text-right">
@@ -625,96 +604,12 @@
 
     <!-- Main charts end -->
 
-    </div>
-    <!-- Main charts end -->
-
-    <!-- Warning modal -->
-    <div id="modal_theme_warning" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header bg-warning">
-                    <h2 class="modal-title">New Item Added</h2>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-
-                <div class="modal-body">
-                    <div class="card-body">
-                        <div class="row align-items-center">
-                            <div class="col-md-2">
-                                <img src="assets/images/slide1.jpg" alt="" width="100%">
-                            </div>
-                            <div class="col-md-8">
-                                <h6 class="card-title ">Product Name</h6>
-                                <p class="card-text">Lorem ipsum dolor sit amet
-                                    consectetur
-                                    adipisicing elit. Iure, voluptates!</p>
-                                <span>&dollar;300</span>
-                            </div>
-                            <div class="col-md-2">
-                                <form action="">
-                                    <input type="number" id="quantity" name="quantity" min="0" max="100" step="1"
-                                        value="1">
-                                </form>
-                            </div>
-                        </div>
-                        <hr class="mb-0">
-                        <div class="card-body">
-                            <div class="row align-items-center">
-                                <div class="col-md-2">
-                                    <img src="assets/images/slide1.jpg" alt="" width="100%">
-                                </div>
-                                <div class="col-md-8">
-                                    <h6 class="card-title ">Product Name</h6>
-                                    <p class="card-text">Lorem ipsum dolor sit amet
-                                        consectetur
-                                        adipisicing elit. Iure, voluptates!</p>
-                                    <span>&dollar;300</span>
-                                </div>
-                                <div class="col-md-2">
-                                    <form action="">
-                                        <input type="number" id="quantity" name="quantity" min="0" max="100" step="1"
-                                            value="1">
-                                    </form>
-                                </div>
-                            </div>
-                            <hr class="mb-0">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-2">
-                                        <img src="assets/images/slide1.jpg" alt="" width="100%">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h6 class="card-title ">Product Name</h6>
-                                        <p class="card-text">Lorem ipsum dolor sit amet
-                                            consectetur
-                                            adipisicing elit. Iure, voluptates!</p>
-                                        <span>&dollar;300</span>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <form action="">
-                                            <input type="number" id="quantity" name="quantity" min="0" max="100"
-                                                step="1" value="1">
-                                        </form>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
-                                <a href="cart.html" type="button" class="btn bg-warning">Go to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /warning modal -->
-
     <!-- contact menu  -->
-    <hr class="text-black-50">
+    <div>
+        <hr>
+    </div>
+
+
     <div class="container-fluid text-black d-flex justify-content-around row">
         <div class="col-12 col-sm-2 col-md-3 text-center">
             <h2>themeist</h2>
@@ -722,10 +617,10 @@
         </div>
         <div class="col-12 col-sm-2 col-md-3 text-center">
             <h3 class="fs-5">Main Menu</h3>
-            <a href="index.html">Home</a><br>
-            <a href="about.html">About Us</a><br>
-            <a href="gridview.html">Our Services</a><br>
-            <a href="help.html">Help</a>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Our Services</p>
+            <p>Help</p>
         </div>
         <div class="col-12 col-sm-2 col-md-3 text-center">
             <h3>Discover</h3>
@@ -743,8 +638,10 @@
     <!-- contact menu  -->
 
     <!-- Footer -->
-    <hr>
-    <div class="navbar navbar-expand-lg container-fluid">
+    <div>
+        <hr>
+    </div>
+    <div class="navbar navbar-expand-lg container">
         <div class="text-center d-lg-none w-100">
             <button type="button" class=" border-0 btn btn-secondary dropdown-toggle" data-toggle="collapse"
                 data-target="#navbar-footer">
@@ -752,12 +649,60 @@
                 Footer
             </button>
         </div>
-        <div class="navbar-collapse collapse" id="navbar-footer">
+        <div class="navbar-collapse collapse " id="navbar-footer">
             <span class="navbar-text font-weight-bold fs-5">@themeist</span>
         </div>
     </div>
+
     <!-- /footer -->
+    <!-- aos js cdn link add start -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- aos js cdn link add start -->
+
+
+    <!-- bootstrap5 bundle start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap5 bundle  end -->
+
 
 </body>
 
 </html>
+
+
+
+    <!-- Carousel Start-->
+
+<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/images/caro1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/images/caro2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/images/caro3.jpg" alt="Third slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div> -->
+
+    <!-- Carousel end-->
