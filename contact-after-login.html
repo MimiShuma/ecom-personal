@@ -8,10 +8,15 @@
 	<title>E-commerce project</title>
 	<link rel="icon" href="assets/images/logoicon.png" type="image/x-icon">
 
+	<!-- aos cdn link add  start -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- aos cdn link add  end -->
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
 		type="text/css">
 	<link href="assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./assets/css/icons/material/styles.min.css">
+	<link rel="stylesheet" href="/assets/css/icons/fontawesome/styles.min.css">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
 	<link href="global_assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -30,6 +35,8 @@
 	<script src="assets/js/plugins/loaders/blockui.min.js"></script>
 	<script src="assets/js/plugins/ui/slinky.min.js"></script>
 	<script src="assets/js/plugins/ui/fab.min.js"></script>
+	<script src="assets/js/plugins/notifications/bootbox.min.js"></script>
+	<script src="assets/js/plugins/forms/selects/select2.min.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -40,6 +47,7 @@
 	<script src="assets/js/plugins/pickers/daterangepicker.js"></script>
 
 	<script src="assets/js/app.js"></script>
+	<script src="assets/js/demo_pages/components_modals.js"></script>
 	<script src="assets/js/demo_pages/dashboard.js"></script>
 	<script src="assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
 	<script src="assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
@@ -57,8 +65,66 @@
 <body>
 
 	<!-- Page header -->
+	<div class="navbar navbar-white container mt-3 d-flex justify-content-between align-items-center">
 
+		<div class="navbar-brand">
+			<a href="index.html">
+				<img src="assets/images/main-logo.png" alt="themeist">
+			</a>
+		</div>
+		<div>
+			<div class="nav-item dropdown dropdown-user">
+				<a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown"
+					aria-expanded="false">
+					<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle mr-2"
+						height="34" alt="">
+					<span>Victoria</span>
+				</a>
+
+				<div class="dropdown-menu dropdown-menu-right">
+					<a href="user-page.html" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
+					<a href="index.html" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	</div>
 	<!-- /page header -->
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-white navbar-expand-md container">
+
+		<!-- Navbar content -->
+		<div class="collapse navbar-collapse font-size-lg" id="navbar">
+			<ul class="navbar-nav ">
+				<li><a class="nav-link text-black-50" href="index-after-login.html">Home</a></li>
+				<li><a class="nav-link text-black-50" href="about-after-login.html">About</a></li>
+				<li><a class="nav-link text-black-50" href="gridview-after-login.html">Our Services</a></li>
+				<li><a class="nav-link text-black-50" href="contact-after-login.html">Contact Us</a></li>
+				<li><a class="nav-link text-black-50" href="help-after-login.html">Help</a></li>
+			</ul>
+			<!-- /navbar content -->
+			<div class="d-flex m-auto">
+				<form action="" class="pr-2">
+					<input type="text" class="form-control" placeholder="Search Your product" size="50">
+				</form>
+				<a href="cart.html" type="button" class="btn bg-warning"><i
+						class="icon-cart"></i>&nbsp;Your&nbsp;cart</a>
+				<!-- <a href="cart.html" class="btn btn-warning" type="button"><i class="icon-cart"></i>&nbsp;Your&nbsp;Cart</a> -->
+			</div>
+		</div>
+		<div class="d-md-none ml-auto">
+			<button class="border-0 pt-2" type="button" data-toggle="collapse" data-target="#navbar">
+				<i class="icon-list"></i>
+			</button>
+		</div>
+	</div>
+	<!-- /main navbar -->
 
 
 	<!-- Page content -->
@@ -71,73 +137,51 @@
 			<div class="content">
 
 				<div class="container">
-					<div class="row align-items-center mt-md-5 pt-md-3">
-						<div class="col-md-5">
-							<img src="assets/images/register.png" alt="" width="100%">
-						</div>
-						<div class="col-md-6 offset-md-1">
-							<div class="card bg-transparent border-0 w-75">
-								<div class="card-header">
-									<h2>Get Started</h2>
-									<p>Welcome to <strong>themeist</strong>! Enter your email to get started.</p>
-								</div>
-								<div class="card-body">
-									<form action="">
-										<div class="row">
-											<div class="col-md-12">
-												<!-- row 1 -->
-												<div class="row">
-													<div class="col-md-6">
-														<input type="text" name="first_name" id="first_name"
-															class="form-control w-100" placeholder="First Name">
-													</div>
-													<div class="col-md-6">
-														<input type="text" name="last_name" id="last_name"
-															class="form-control w-100" placeholder="Last Name">
-													</div>
-												</div>
-												<!-- row 2 -->
-												<div class="row mt-2">
-													<div class="col-md-12">
-														<input type="email" name="email" id="email"
-															class="form-control w-100" placeholder="your@email.com">
-													</div>
-												</div>
-												<!-- row 3 -->
-												<div class="row mt-2">
-													<div class="col-md-12">
-														<input type="password" name="password" id="password"
-															class="form-control" placeholder="******">
-													</div>
-												</div>
-												<!-- row 4 -->
-												<div class="row mt-2 text-right">
-													<div class="col-md-12">
-														<a href="index-after-login.html" type="submit"
-															class="btn btn-success w-100">Register</a>
-													</div>
-												</div>
-												<!-- row 5 -->
-												<div class="row mt-2 text-right">
-													<div class="col-md-12">
-														<p>Already registered? <a href="login.html">Login Here!</a></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-									</form>
-								</div>
-								<div class="card-footer">
-									<p>By continuing, you agree to our <a href="#">Terms of Service</a> & <a
-											href="#">Privacy Policy</a></p>
+					<div class="card">
+						<div class="card-header header-elements-inline">
+							<h2 class="card-title">Contact Us:</h2>
+							<div class="header-elements">
+								<div class="list-icons">
+									<a class="list-icons-item" data-action="reload"></a>
 								</div>
 							</div>
 						</div>
 
+						<div class="card-body">
+							<form action="#">
+								<div class="form-group">
+									<label>Enter your name:</label>
+									<input type="text" class="form-control" placeholder="Eugene Kopyov">
+								</div>
+
+								<div class="form-group">
+									<label>Enter your email:</label>
+									<input type="email" class="form-control" placeholder="your@email.com">
+								</div>
+
+								<div class="form-group">
+									<label>Attach screenshot:</label>
+									<div class="uniform-uploader"><input type="file" class="form-input-styled"
+											data-fouc=""><span class="filename" style="user-select: none;">No file
+											selected</span><span class="action btn bg-warning-400"
+											style="user-select: none;">Choose File</span></div>
+									<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size
+										2Mb</span>
+								</div>
+
+								<div class="form-group">
+									<label>Your message:</label>
+									<textarea rows="5" cols="5" class="form-control"
+										placeholder="Enter your message here"></textarea>
+								</div>
+
+								<div class="text-right">
+									<button type="submit" class="btn btn-success">Send</button>
+								</div>
+							</form>
+						</div>
 					</div>
 				</div>
-
 			</div>
 			<!-- /content area -->
 
@@ -176,6 +220,7 @@
 		</div>
 	</div>
 	<!-- contact menu  -->
+
 	<!-- Footer -->
 	<hr>
 	<div class="navbar navbar-expand-lg container-fluid">
@@ -197,6 +242,16 @@
 		AOS.init();
 	</script>
 	<!-- aos js cdn link add start -->
+	<!-- footer end -->
+	<script>
+		// Alert dialog
+		$('#alert-custom').on('click', function () {
+			bootbox.alert({
+				title: 'Please login first!',
+				message: 'Only registered members can access cart.'
+			});
+		});
+	</script>
 	<script src="global_assets/js/bootstrap.bundle.js"></script>
 </body>
 

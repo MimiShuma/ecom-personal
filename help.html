@@ -8,10 +8,15 @@
 	<title>E-commerce project</title>
 	<link rel="icon" href="assets/images/logoicon.png" type="image/x-icon">
 
+	<!-- aos cdn link add  start -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- aos cdn link add  end -->
 	<!-- Global stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
 		type="text/css">
 	<link href="assets/css/icons/icomoon/styles.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./assets/css/icons/material/styles.min.css">
+	<link rel="stylesheet" href="/assets/css/icons/fontawesome/styles.min.css">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
 	<link href="global_assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -30,6 +35,8 @@
 	<script src="assets/js/plugins/loaders/blockui.min.js"></script>
 	<script src="assets/js/plugins/ui/slinky.min.js"></script>
 	<script src="assets/js/plugins/ui/fab.min.js"></script>
+	<script src="assets/js/plugins/notifications/bootbox.min.js"></script>
+	<script src="assets/js/plugins/forms/selects/select2.min.js"></script>
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
@@ -40,6 +47,7 @@
 	<script src="assets/js/plugins/pickers/daterangepicker.js"></script>
 
 	<script src="assets/js/app.js"></script>
+	<script src="assets/js/demo_pages/components_modals.js"></script>
 	<script src="assets/js/demo_pages/dashboard.js"></script>
 	<script src="assets/js/demo_charts/pages/dashboard/light/streamgraph.js"></script>
 	<script src="assets/js/demo_charts/pages/dashboard/light/sparklines.js"></script>
@@ -57,48 +65,25 @@
 <body>
 
 	<!-- Page header -->
-	<div class="navbar navbar-white navbar-expand-xl container">
+	<div class="navbar navbar-white container mt-3 d-flex justify-content-between align-items-center">
+
 		<div class="navbar-brand">
 			<a href="index.html">
 				<img src="assets/images/main-logo.png" alt="themeist">
 			</a>
 		</div>
-
-		<div class="d-xl-none ">
-			<button class="border-0 pt-2" type="button" data-toggle="collapse" data-target="#navbar-demo3-mobile">
-				<i class="icon-list"></i>
-			</button>
+		<div>
+			<a href="login.html" type="button" class="btn btn-success border-0"> Login</a>
 		</div>
 
-		<div class="navbar-collapse collapse" id="navbar-demo3-mobile">
+	</div>
 
-			<ul class="navbar-nav ml-xl-auto text-center">
-				<li>
-					<a href="#" class="nav-link">
-						<i class="mi-account-circle mi-2x text-black-50"></i>
-					</a>
-				</li>
-				<li>
-					<a class="nav-link pt-3" href="register.html">Sign Up</a>
-				</li>
-				<li>
-					<a class="nav-link pt-3" href="login.html">Login </a>
-				</li>
-			</ul>
 
-		</div>
 	</div>
 	<!-- /page header -->
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-white navbar-expand-md container">
-
-		<!-- Mobile toggler -->
-		<!-- <div class="d-md-none">
-			...
-		</div> -->
-		<!-- /mobile toggler -->
-
 
 		<!-- Navbar content -->
 		<div class="collapse navbar-collapse font-size-lg" id="navbar">
@@ -109,13 +94,20 @@
 				<li><a class="nav-link text-black-50" href="contact.html">Contact Us</a></li>
 				<li><a class="nav-link text-black-50" href="help.html">Help</a></li>
 			</ul>
+			<!-- /navbar content -->
+			<div class="d-flex m-auto">
+				<form action="" class="pr-2">
+					<input type="text" class="form-control" placeholder="Search Your product" size="50">
+				</form>
+				<button type="button" class="btn bg-warning" id="alert-custom"><i
+						class="icon-cart"></i>&nbsp;Your&nbsp;cart</button>
+				<!-- <a href="cart.html" class="btn btn-warning" type="button"><i class="icon-cart"></i>&nbsp;Your&nbsp;Cart</a> -->
+			</div>
 		</div>
-		<!-- /navbar content -->
-		<div class="d-flex m-auto">
-			<form action="" class="pr-2">
-				<input type="text" class="form-control" placeholder="Search Your product" size="40">
-			</form>
-			<a href="cart.html" class="btn btn-secondary" type="button"><i class="icon-cart"></i> Your Cart</a>
+		<div class="d-md-none ml-auto">
+			<button class="border-0 pt-2" type="button" data-toggle="collapse" data-target="#navbar">
+				<i class="icon-list"></i>
+			</button>
 		</div>
 	</div>
 	<!-- /main navbar -->
@@ -853,6 +845,16 @@
 	</script>
 	<!-- aos js cdn link add start -->
 	<!-- footer end -->
+
+	<script>
+		// Alert dialog
+		$('#alert-custom').on('click', function () {
+			bootbox.alert({
+				title: 'Please login first!',
+				message: 'Only registered members can access cart.'
+			});
+		});
+	</script>
 	<script src="global_assets/js/bootstrap.bundle.js"></script>
 </body>
 
