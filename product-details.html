@@ -96,7 +96,7 @@
             </ul>
             <!-- /navbar content -->
             <div class="d-flex m-auto">
-                <form action="" class="pr-2">
+                <form action="" class="pr-2 ml-md-5 pl-md-5">
                     <input type="text" class="form-control" placeholder="Search Your product" size="50">
                 </form>
                 <button type="button" class="btn bg-warning" id="alert-custom"><i
@@ -289,8 +289,7 @@
                             harum!</p>
                     </div>
                     <div>
-                        <button type="button" class="btn bg-warning mt-4" data-toggle="modal"
-                            data-target="#modal_theme_warning">Add to cart</button>
+                        <button type="button" class="btn bg-warning" id="alert-custom2">Add&nbsp;to&nbsp;cart</button>
                     </div>
                 </div>
             </div>
@@ -620,7 +619,7 @@
     <!-- Main charts end -->
 
     <!-- Warning modal -->
-    <div id="modal_theme_warning" class="modal fade" tabindex="-1">
+    <!-- <div id="modal_theme_warning" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-warning">
@@ -694,14 +693,15 @@
 
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
-                                <a href="cart.html" type="button" class="btn bg-warning">Go to cart</a>
+                                <a href="cart.html" target="_blank" type="button" class="btn bg-warning">Checkout
+                                    Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- /warning modal -->
 
     <!-- contact menu  -->
@@ -752,6 +752,15 @@
     <script>
         // Alert dialog
         $('#alert-custom').on('click', function () {
+            bootbox.alert({
+                title: 'Please login first!',
+                message: 'Only registered members can access cart.'
+            });
+        });
+    </script>
+    <script>
+        // Alert dialog
+        $('#alert-custom2').on('click', function () {
             bootbox.alert({
                 title: 'Please login first!',
                 message: 'Only registered members can access cart.'
