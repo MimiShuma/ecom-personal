@@ -102,14 +102,15 @@
         <!-- Navbar content -->
         <div class="collapse navbar-collapse font-size-lg" id="navbar">
             <ul class="navbar-nav ">
-                <li><a class="nav-link text-black-50" href="index-after-login.html">Home</a></li>
+                <li><a class="nav-link text-black-50" href="index-after-login.html" style="padding-left: 0;">Home</a>
+                </li>
                 <li><a class="nav-link text-black-50" href="about-after-login.html">About</a></li>
                 <li><a class="nav-link text-black-50" href="gridview-after-login.html">Our Services</a></li>
                 <li><a class="nav-link text-black-50" href="contact-after-login.html">Contact Us</a></li>
                 <li><a class="nav-link text-black-50" href="help-after-login.html">Help</a></li>
             </ul>
             <!-- /navbar content -->
-            <div class="d-flex m-auto">
+            <div class="d-flex ml-auto">
                 <form action="" class="pr-2 ml-md-5 pl-md-5">
                     <input type="text" class="form-control" placeholder="Search Your product" size="50">
                 </form>
@@ -397,51 +398,56 @@
     <!-- about part  -->
 
 
-    <!-- contact menu  -->
-    <hr>
-    <div class="container-fluid text-black d-flex justify-content-around row">
-        <div class="col-12 col-sm-2 col-md-3 text-center">
-            <h2>themeist</h2>
-            <address>Sector 7,Uttara Dhaka Bangladesh</address>
-        </div>
-        <div class="col-12 col-sm-2 col-md-3 text-center">
-            <h3 class="fs-5">Main Menu</h3>
-            <a href="index.html">Home</a><br>
-            <a href="about.html">About Us</a><br>
-            <a href="gridview.html">Our Services</a><br>
-            <a href="help.html">Help</a>
-        </div>
-        <div class="col-12 col-sm-2 col-md-3 text-center">
-            <h3>Discover</h3>
-            <p>The Team</p>
-            <p>Our History</p>
-            <p>Brand Moto</p>
-        </div>
-        <div class="col-12 col-sm-2 col-md-3 text-center">
-            <h3>Find Us On</h3>
-            <p>Facebook</p>
-            <p>Twitter</p>
-            <p>Instagram</p>
-        </div>
+    <!-- FOOTER  -->
+    <div>
+        <hr>
     </div>
-    <!-- contact menu  -->
-
-
-    <!-- Footer -->
-    <hr>
-    <div class="navbar navbar-expand-lg container">
-        <div class="text-center d-lg-none w-100">
-            <button type="button" class=" border-0 btn btn-secondary dropdown-toggle" data-toggle="collapse"
-                data-target="#navbar-footer">
-                <i class="icon-unfold mr-2"></i>
-                Footer
-            </button>
+    <div class="navbar navbar-expand-md container">
+        <div class="text-center d-md-none w-100">
+            <button type="button" class=" border-0 bg-transparent" data-toggle="collapse" data-target="#navbar-footer">
+                <i class="icon-menu7 mr-2"></i></button>
         </div>
         <div class="navbar-collapse collapse" id="navbar-footer">
-            <span class="navbar-text font-weight-bold fs-5">@themeist</span>
+            <div class="container text-black d-flex justify-content-around row">
+                <div class="col-12 col-sm-2 col-md-3 text-center">
+                    <a href="index.html"><img src="assets/images/main-logo.png" alt="logo" class="img-fluid py-2"
+                            width="100"></a>
+                    <address>Sector 7, Uttara</address>
+                    <address>Dhaka, Bangladesh</address>
+                </div>
+                <div class="col-12 col-sm-2 col-md-3 text-center">
+                    <h3 class="fs-5">Main Menu</h3>
+                    <p><a href="index-after-login.html" class="text-dark">Home</a></p>
+                    <p><a href="about-after-login.html" class="text-dark">About Us</a></p>
+                    <p><a href="gridview-after-login.html" class="text-dark">Our Services</a></p>
+                    <p><a href="help-after-login.html" class="text-dark">Help</a></p>
+                </div>
+                <div class="col-12 col-sm-2 col-md-3 text-center">
+                    <h3>Discover</h3>
+                    <p><a href="#" class="text-dark">The Team</a></p>
+                    <p><a href="#" class="text-dark">Our History</a></p>
+                    <p><a href="#" class="text-dark">Brand Moto</a></p>
+                </div>
+                <div class="col-12 col-sm-2 col-md-3 text-center">
+                    <h3>Find Us On</h3>
+                    <p><a href="#" class="text-dark">Facebook</a></p>
+                    <p><a href="#" class="text-dark">Twitter</a></p>
+                    <p><a href="#" class="text-dark">Instagram</a></p>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- /footer -->
+    <div>
+        <hr>
+    </div>
+
+    <div class="font-weight-bold container text-center">Copyright &#169; 2024-25 || <span
+            class="text-blue text-uppercase">Themeist</span></div>
+
+    <div>
+        <hr>
+    </div>
+    <!--/ FOOTER  -->
     <!-- aos js cdn link add start -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
